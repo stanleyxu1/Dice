@@ -19,6 +19,7 @@ void draw()
   textSize(20);
   text("Sum: " + coutnt, 210, 470);
   System.out.println(coutnt);
+  background(0, 150, 0);
 }
 
 
