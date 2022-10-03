@@ -8,13 +8,16 @@ void setup()
 int coutnt = 0;
 void draw()
 {
-  for (int y = 15; y<=440; y+=70) {
-    for (int x= 15; x<= 450; x+=70) {
+  for (int y = 15; y<=400; y+=70) {
+    for (int x= 15; x<= 440; x+=70) {
       hi = new Die(x, y);
       coutnt = hi.random + coutnt;
       hi.show();
     }
   }
+
+  textSize(20);
+  text("Sum: " + coutnt, 210, 470);
   System.out.println(coutnt);
 }
 
