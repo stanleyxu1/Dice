@@ -2,6 +2,7 @@ void setup()
 {
   size(500, 500);
   noLoop();
+  background(0, 150, 0);
 }
 
 int coutnt = 0;
@@ -57,7 +58,7 @@ class Die //models one single dice cube
   void show()
   {
     fill(255, 255, 255);
-    square(myX, myY, 60);
+    rect(myX, myY, 60, 60);
 
     if (random == 1) {
       fill(150, 0, 0);
