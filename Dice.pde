@@ -2,7 +2,6 @@ void setup()
 {
   size(500, 500);
   noLoop();
-  background(0, 100, 0);
 }
 
 int coutnt = 0;
