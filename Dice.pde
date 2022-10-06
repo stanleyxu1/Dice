@@ -2,30 +2,33 @@ void setup()
 {
   size(500, 500);
   noLoop();
-  background(0, 150, 0);
+  background(0, 100, 0);
 }
 
 int coutnt = 0;
 void draw()
 {
-  for (int y = 15; y<=400; y+=70) {
-    for (int x= 15; x<= 440; x+=70) {
+  background(0, 100, 0);
+  for (int y = 15; y<=410; y+=70) {
+    for (int x= 15; x<= 450; x+=70) {
       hi = new Die(x, y);
       coutnt = hi.random + coutnt;
       hi.show();
     }
   }
-
-  textSize(20);
-  text("Sum: " + coutnt, 210, 470);
   System.out.println(coutnt);
-  background(0, 150, 0);
+
+
+  fill(100, 100, 100);
+  textSize(20);
+  text(coutnt, 200, 450);
 }
 
 
 void mousePressed()
 {
   coutnt = 0;
+  background(0, 100, 0);
   redraw();
 }
 
@@ -62,7 +65,7 @@ class Die //models one single dice cube
   void show()
   {
     fill(255, 255, 255);
-    rect(myX, myY, 60, 60);
+    square(myX, myY, 60);
 
     if (random == 1) {
       fill(150, 0, 0);
