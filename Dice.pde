@@ -16,7 +16,6 @@ void draw()
       hi.show();
     }
   }
-  System.out.println(coutnt);
 
 
   fill(100, 0, 0);
