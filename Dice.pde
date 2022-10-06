@@ -19,16 +19,15 @@ void draw()
   System.out.println(coutnt);
 
 
-  fill(100, 100, 100);
+  fill(100, 0, 0);
   textSize(20);
-  text(coutnt, 200, 450);
+  text(coutnt, 230, 450);
 }
 
 
 void mousePressed()
 {
   coutnt = 0;
-  background(0, 100, 0);
   redraw();
 }
 
